@@ -4,7 +4,7 @@
 // /dev/ttyACM0
 // python-build-end
   
-//LEDs
+//LEDS
 #include <FastLED.h>
 #define NUM_LEDS    144
 #define LED_PIN     13

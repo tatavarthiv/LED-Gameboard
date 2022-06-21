@@ -4,7 +4,7 @@
 // /dev/ttyACM0
 // python-build-end
 
-//LEDs
+//LEDS
 #include <FastLED.h>
 #define NUM_LEDS    144
 #define LED_PIN     13
@@ -211,12 +211,9 @@ void findBestMove() {
   x_pos = bestX;
   y_pos = bestY;
   place();
-//    // DEBUGGING
-//    Serial.write("================");
-//    Serial.println();
-//    Serial.write("================");
-//    Serial.println();
 }
+
+
 int minimax(int tmp[3][3], int mark, char player, bool optimizer) {
   if (checkForWin(opposite(player), tmp)) {
     if (player == PIECE_X) {
@@ -268,7 +265,6 @@ bool checkLine(int line[], char player) {
     return true;
 }
 
-// might need to debug row, cols
 bool checkForWin(char player, int tmp[3][3]) {
 // Check if there is a win for player.
 

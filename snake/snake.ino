@@ -4,7 +4,7 @@
 // /dev/ttyACM0
 // python-build-end
 
-//LEDs
+//LEDS
 #include <FastLED.h>
 #include <LinkedList.h>
 #define NUM_LEDS    144
@@ -154,19 +154,6 @@ boolean snakeContainsPosition(int x, int y) {
 // read directions
 int getCurrentDirection(){
   int dir = currDirection;
-//  if (digitalRead(UP_PIN) == LOW) {
-//    dir = DIR_UP;
-//  }
-//  else if (digitalRead(DOWN_PIN) == LOW) {
-//    dir = DIR_DOWN;
-//  }
-//  else if (digitalRead(LEFT_PIN) == LOW) {
-//    dir = DIR_LEFT;
-//  }
-//  else if (digitalRead(RIGHT_PIN) == LOW) {
-//    dir = DIR_RIGHT;
-//  }
-
   if (digitalRead(UP_PIN) == LOW) {
     long unsigned int currTime = millis();
 

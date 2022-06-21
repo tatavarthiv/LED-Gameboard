@@ -4,7 +4,7 @@
 // /dev/ttyACM0
 // python-build-end
   
-//LEDs
+//LEDS
 #include <FastLED.h>
 #define NUM_LEDS    144
 #define LED_PIN     13
@@ -182,7 +182,6 @@ bool checkLine(int line[], char player) {
     return true;
 }
 
-// might need to debug row, cols
 bool checkForWin(char player) {
 // Check if there is a win for player.
 

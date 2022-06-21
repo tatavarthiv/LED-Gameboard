@@ -104,7 +104,7 @@ def start():
     else:
         print("\n-- Success --")
 
-    # Add reset functionalities
+    # Add reset functionality
     for widget in win.winfo_children():
         widget.destroy()
     frame = Frame(win)
